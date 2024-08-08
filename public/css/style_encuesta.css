@@ -1,0 +1,209 @@
+/* diseño dela barra superior de la pagina */
+header.header_info_col {
+    /* background: #002c7f; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-bottom: 10px solid #EEB134;
+    height: 100px;
+    justify-content: space-between;
+}
+/* tamaño del logo de la barra superior */
+header.header_info_col img {
+    width: 66px;
+    margin-left: 10px;
+}
+
+/* asterisco color rojo */
+span.obligatorio_c {
+    color: red;
+}
+input[type="radio"] {
+    accent-color: #002c7f;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  
+  /* Estilos adicionales para personalizar el radio button */
+  input[type="radio"]:checked {
+    /* Estilos cuando el radio button está seleccionado */
+    background-color: #002c7f; /* Color de fondo del radio button seleccionado */
+    border-color: #002c7f; /* Color del borde del radio button seleccionado */
+  }
+label{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 20px;
+    justify-content: space-around;
+    gap: 20px;
+}
+/* ubicacion de los inputs */
+.form-check {
+    display: flex;
+    justify-content: center;
+}
+
+.form-check input {
+    width: 25px; /* Ancho del radio input */
+    height: 25px; /* Alto del radio input */
+    margin: 5px;
+
+}
+/* aliniacion input y label */
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div#btn_enviar_encuesta {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+button.btn.btn-primary {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    background: #002c7f!important;
+    border: 1px solid #002c7f;
+    color: white;
+}
+
+button.btn.btn-primary:hover {
+    background: #fdb027 !important;
+    color: #002c7f;
+}
+
+.imagen{
+    width: 400px; /* Ancho del marco */
+    /* height: 500px; Alto del marco */
+    /* border: solid #000; Borde del marco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}  
+
+.imagen img {
+    /* border-radius: 10%; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Esta propiedad asegura que la imagen se ajuste al marco */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Ajusta los valores para más/menos difuminado */
+    padding-top: 20px;
+}
+
+form.formulario_c {
+    padding: 20px;
+    
+}
+
+.content_radio {
+    display: flex;
+    gap: 10px;
+}
+strong.nombre_encuesta {
+    font-size: 30px;
+}
+
+input#comentarios {
+    border: 1px solid;
+}
+/*Tablet*/
+@media (max-width: 768px){
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen {
+        width: 200px;
+        height: 250px;
+    }
+    .titulo_header {
+        font-size: 25px;
+    }
+}
+@media (min-width: 769px){
+    .imagen{
+        position: -webkit-sticky; /* Para compatibilidad con navegadores webkit */
+        position: sticky;
+        top: 0; /* Puedes ajustar este valor para la posición vertical */
+        z-index: 1000; /* Asegura que la imagen se quede por encima de otros contenidos */
+    }
+}
+/* mobile */
+@media (max-width: 549px){
+    
+    header.header_info_col {
+        display: flex;
+        gap: 10px;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .content_radio {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+        align-items: center;
+        gap: 17px;
+    }
+    .form-check {
+        display: flex;
+        flex-direction: column;
+    }
+    .ln_radio {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-left: 12px;
+    }
+    form.formulario_c{
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .titulo_header {
+        font-size: 18px;
+    }
+}
+/* diseño de encuesta no habilitada */
+.mensaje_no_valida {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    /* animation: fadeIn 2s ease-in-out; */
+    margin-top: 170px;
+}
+.mensaje_no_valida .icono-error {
+    font-size: 3em;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* fin diseño de encuesta no habilitada */

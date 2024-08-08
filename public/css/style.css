@@ -1,0 +1,328 @@
+header.header_info_col {
+    background: #012b7f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+    margin-bottom: 40px;
+    /* position: fixed; */
+    /* top: 0 ; */
+    width: 100%;
+    z-index: 9999;
+}
+
+header.header_info_col img {
+    width: 66px;
+}
+
+span.obligatorio_c {
+    color: red;
+}
+.content_input_radio {
+    padding: 10px 20px;    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    justify-content: space-around;
+}
+
+input.form-check-input {
+    width: 25px;
+    height: 25px;
+}
+
+div#btn_enviar_encuesta {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+button.btn.btn-primary {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    background: #012b7f;
+    border: 1px solid #012b7f;
+}
+
+button.btn.btn-primary:hover {
+    background: transparent;
+    color: #012b7f;
+}
+
+.content img {
+    width: 500px;
+}
+
+/* form.formulario_c {
+    padding: 20px;
+    width: 60%;
+} */
+
+.content_radio {
+    display: flex;
+    gap: 10px;
+}
+.content_catego {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.img_content img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.title_categorie h3 {
+    font-size: 18px;
+    margin: 1px;
+}
+
+button.click_inf:hover{
+    transform: scale(1.1);
+    background: #012b7f;
+    color: white;
+    border: 1px solid #012b7f;
+}
+button.click_inf {
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    gap: 20px;
+    box-shadow: 0 4px 8px #012b7f94;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    width: 190px;
+    color: #012b7f;
+}
+.title_encuesta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_clubpuebloviejo {
+    position: fixed ; 
+    bottom: 0;
+    width: 100%;
+    background-color: #000e29;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .content_icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text_info{
+    text-align: center;
+    margin: 0;
+}
+
+.content_icon a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+.content_icon span {
+    font-size: 35px;
+    color: #e0ac1d;
+}
+
+.text_info a {
+    color: #FFC107;
+    text-decoration: none;
+    font-weight: 700;
+}
+.info_socio {
+    display: flex;
+    justify-content: space-between;
+}
+input.form-check-input {
+    border: 1px solid;
+}
+.content_form {
+    display: flex;
+    justify-content: center;
+}
+
+select#area,input#comentarios,input#comentarios_adicionales {
+    border: 1px solid;
+}
+
+select#area {
+    width: 207px;
+}
+
+.header_form_e {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: lightgrey;
+}
+
+
+
+.modal-dialog {
+    max-width: 700px !important;
+}
+
+
+/*Tablet*/
+@media (max-width: 768px){
+    h1 {
+        font-size: 25px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title_encuesta h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .content_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_clubpuebloviejo {
+        position: relative; /* Cambia a posición relativa para que fluya con el contenido */
+        bottom: 0;
+    }
+    .info_socio {
+        display: flex;
+        flex-direction: column;
+        padding-top:20px
+    }
+    select#area {
+        width: 100%;
+    }
+    header.header_info_col img {
+        width: 66px;
+    }
+    
+}
+
+
+
+/* mobile */
+@media (max-width: 549px){
+    h2 {
+        text-align: end;
+    }
+    .content img {
+        display: none;
+    }
+
+    header.header_info_col {
+        display: flex;
+        gap: 20px;
+    }
+
+    .content_input_radio {
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .content_radio {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+        align-items: center;
+        gap: 17px;
+    }
+    .content_input_radio{
+        display: block;
+    }
+    .ln_radio {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-left: 12px;
+    }
+    form.formulario_c{
+        padding-bottom: 50px;
+        width: 80%;
+    }
+    .title_encuesta h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .title_categorie h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .content_catego {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .img_content img {
+        width: auto;
+        height: 158px;
+        object-fit: cover;
+    }
+    a.click_inf {
+        width: 150px;
+    }
+
+    .content_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+    .content_icon span {
+        font-size: 20px;
+    }
+    .text_info {
+        font-size: 12px;
+    }
+    /* label {
+        font-size: 16px;
+    } */
+    button.btn.btn-primary {
+        width: 116px;
+    }
+    .content_catego{
+        gap: 38px;
+    }
+}
+
+
+@media screen and (max-height: 760px) {
+    .footer_clubpuebloviejo {
+        position: relative;
+    }
+
+}
